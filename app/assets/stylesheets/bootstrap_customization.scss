@@ -1,14 +1,14 @@
 @import url("http://fonts.googleapis.com/css?family=Abel");
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-@import url(http://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Indie+Flower|Raleway:300,600,900,500,400,100,800,200,700);
+@import url("http://fonts.googleapis.com/css?family=Varela+Round");
+@import url("http://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Indie+Flower|Raleway:300,600,900,500,400,100,800,200,700");
 
 
-//$body-bg:                         #ecf0f1;
+$body-bg:                         #ecf0f1;
 $font-family-sans-serif:          'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                   65px;
 $navbar-default-bg:               white;
 $navbar-default-brand-color:      #c0392b;
-$brand-primary:                   #c0392b;
+$brand-primary:                   #fff;
 $jumbotron-bg:                    white;
 
 .center {
