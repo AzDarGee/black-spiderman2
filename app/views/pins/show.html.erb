@@ -1,15 +1,18 @@
-<%= link_to 'Back', pins_path %>
+<div class="container">
+	<h1><%= link_to 'Back', pins_path %></h1>
 
-
+	<div class="row">
 		<%= image_tag @pin.image.url %>
 		<div class="text">
 		  <%= @pin.description %>
 		</div >
 		<% if current_user && (@pin.user == current_user) %>
 			<%= link_to edit_pin_path(@pin) do %>
-      	<span class="glyphicon glyphicon-edit left">Edit</span>
-      <% end %>
-      <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-      	<span class="glyphicon glyphicon-trash right">Delete</span>
-      <% end %>
+			<span class="glyphicon glyphicon-edit left">Edit</span>
 		<% end %>
+		<%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+			<span class="glyphicon glyphicon-trash right">Delete</span>
+		<% end %>
+		<% end %>
+	</div>
+</div>

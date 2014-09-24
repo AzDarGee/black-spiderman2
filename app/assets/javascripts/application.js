@@ -13,24 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require jquery.turbolinks
 //= require turbolinks
+//= require jquery.turbolinks
+
 //= require masonry/jquery.masonry
 //= require masonry/jquery.imagesloaded.min
 
 //= require_tree .
 
-$(document).on('page:load',function() {
+$(document).on("page:load",function() {
 
- //    var origHeight = $("div").outerHeight(true);
-
-	// $("div").hover(function(e){
-	//     $(this).stop().animate({
-	//         height: e.type === "mouseenter" ? $(window).height() : origHeight
-	//     });
-	// });
-
-
+	
 
 	//Top navbar fixed
 

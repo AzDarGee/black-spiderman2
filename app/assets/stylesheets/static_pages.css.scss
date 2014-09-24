@@ -10,8 +10,8 @@ body {
 
 span {
   font-family: "Poiret One";
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
   font-size: 8em;
 }
 
@@ -34,8 +34,23 @@ span {
 .card:hover {
    height:100%;
    z-index:2;
-   -webkit-transform:translate(-15px,15px);
+   -webkit-transform:translate(-15px,10px);
    -webkit-box-shadow: 1px 1px 1px #888;
+    .card-image{
+      span > a {
+        color: black;
+      }
+    }
+}
+
+span > a {
+  text-decoration: none;
+  color: white;
+}
+
+span > a:hover {
+  text-decoration: none;
+  color: black
 }
 
 
