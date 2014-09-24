@@ -1,0 +1,56 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+body {
+  background: #444444;
+  overflow-x: hidden;
+}
+
+.center {
+	text-align:center;
+}
+
+div {
+   margin: 0 auto;
+   position:relative;
+}
+
+h1 {
+  font-family: "Poiret One";
+	padding: 0;
+	margin: 0;
+	border: 1px solid #fff;
+  font-size: 8.125em;
+  
+}
+
+.item {
+   z-index:1;
+   -webkit-transition:all 0.1s ease-in-out;
+   height: 25%;
+}
+.item:hover {
+   height:100%;
+   z-index:2;
+   -webkit-transform:translate(-15px,15px);
+   -webkit-box-shadow: 1px 1px 1px #888;
+}
+
+.troy {
+  background-image: url('/assets/troy.jpg');
+}
+
+.tb {
+  background-image: url('/assets/tb2.jpg');
+}
+
+.cg {
+  background-image: url('/assets/cg.jpg');
+}
+
+.dg {
+  background-image: url('/assets/dg.jpg');
+}
