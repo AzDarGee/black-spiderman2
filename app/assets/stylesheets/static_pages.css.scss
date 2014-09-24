@@ -26,7 +26,17 @@ span {
   position: relative;
 }
 
-
+.card {
+   z-index:1;
+   -webkit-transition:all 0.1s ease-in-out;
+   height: 20%;
+}
+.card:hover {
+   height:100%;
+   z-index:2;
+   -webkit-transform:translate(-15px,15px);
+   -webkit-box-shadow: 1px 1px 1px #888;
+}
 
 
 // ========= LOAD IMAGES IN CARDS ==========
