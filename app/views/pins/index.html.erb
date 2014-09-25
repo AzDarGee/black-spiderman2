@@ -1,8 +1,8 @@
 <%= render 'static_pages/partials/home' if !user_signed_in? %>
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
-    <div class="box panel panel-default">
-      <%= link_to (image_tag pin.image.url(:medium)), pin %>
+    <div class="box">
+      <%= link_to (image_tag pin.image.url(:large)), pin %>
       <div class="panel-body">
         <div class="pin-title"><%= pin.description.first(140) %></div>
         <strong><%= pin.user.user_name %></strong>
