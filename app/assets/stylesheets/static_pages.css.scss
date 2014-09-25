@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-span {
+tits {
   font-family: "Poiret One";
   padding: 0;
   margin: 0;
@@ -37,22 +37,32 @@ span {
    -webkit-transform:translate(-15px,10px);
    -webkit-box-shadow: 1px 1px 1px #888;
     .card-image{
-      span > a {
+      tits > a {
         color: black;
       }
     }
 }
 
-span > a {
+tits > a {
   text-decoration: none;
   color: white;
 }
 
-span > a:hover {
+tits > a:hover {
   text-decoration: none;
   color: black
 }
 
+.pic-desc {
+  border: 2px solid lighten(#000, 80%);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.show-border {
+  border: 2px solid #c0392b;
+  border-radius: 1% 20%;
+}
 
 // ========= LOAD IMAGES IN CARDS ==========
 .troy {

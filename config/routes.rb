@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   root :to => "static_pages#index"
-  get 'about' => "pages#about"
+  get 'about' => "static_pages#about"
 
   # static pages
   get '/the-boy' => "static_pages#the_boy", as: :theboy

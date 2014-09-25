@@ -1,18 +1,31 @@
-<div class="container">
-	<h1><%= link_to 'Back', pins_path %></h1>
+<div class="container">	
+	<div class="container">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h2>TITLE</h2>
+	    </div>
+			<div class="panel-body center">
+			  <%= image_tag @pin.image.url(:xxlarge), class: "show-border" %>
+			</div>
+			<hr>
+			<div class="panel-body pic-desc">
+				<div class="text">
+				  <%= @pin.description %>
+				</div >
+				<% if current_user && (@pin.user == current_user) %>
+					<%= link_to edit_pin_path(@pin) do %>
+					<span class="glyphicon glyphicon-edit left">Edit</span>
+				<% end %>
+				<%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+					<span class="glyphicon glyphicon-trash right">Delete</span>
+				<% end %>
+				<% end %>
+			</div>
 
-	<div class="row">
-		<%= image_tag @pin.image.url %>
-		<div class="text">
-		  <%= @pin.description %>
-		</div >
-		<% if current_user && (@pin.user == current_user) %>
-			<%= link_to edit_pin_path(@pin) do %>
-			<span class="glyphicon glyphicon-edit left">Edit</span>
-		<% end %>
-		<%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-			<span class="glyphicon glyphicon-trash right">Delete</span>
-		<% end %>
-		<% end %>
+			<div class="panel-footer">
+			      <h1><%= link_to 'Back', pins_path %></h1>
+			</div>
+	  </div>
 	</div>
+
 </div>
