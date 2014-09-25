@@ -83,7 +83,7 @@ Rails.application.configure do
 
   #Required for Heroku
   #Note --> set to your actual host
-  config.action_mailer.default_url_options = { host: 'peaceful-cove-5760.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'nameless-hollows-9490.herokuapp.com' }
 
   #Sets paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
