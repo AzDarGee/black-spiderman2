@@ -9,10 +9,13 @@
 		</div>
 		<hr>
 		<div class="panel-body pic-desc">
-			<div class="text">
-			  <%= @pin.description %>
-			</div >
-			<hr>
+			<% if @pin.description != nil %>
+				<div class="text">
+				  <%= @pin.description %>
+				</div >
+				<hr>
+			<% end %>
+			
 			<% if current_user && (@pin.user == current_user) %>
 				<%= link_to edit_pin_path(@pin) do %>
 				<span class="glyphicon glyphicon-edit left"> Edit</span>

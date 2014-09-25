@@ -4,7 +4,8 @@
     <div class="box">
       <%= link_to (image_tag pin.image.url(:large)), pin %>
       <div class="panel-body">
-        <div class="pin-title"><%= pin.description.first(140) %></div>
+        <div class="pin-title"><%= pin.title %></div>
+        <div class="pin-description"><%= pin.description.first(140) %></div>
         <strong><%= pin.user.user_name %></strong>
         <% if current_user && (pin.user == current_user) %>
             <%= link_to edit_pin_path(pin) do %>
