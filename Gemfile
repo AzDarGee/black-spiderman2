@@ -16,13 +16,14 @@ gem 'devise'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'masonry-rails'
 gem 'aws-sdk', '~> 1.44.0'
+gem 'pg', '~> 0.18'
 
 group :development do
   gem 'guard-livereload', require: false
   gem "rack-livereload"
   gem 'sqlite3'
 end
+
 group :production do
-     gem 'pg'
-     gem 'rails_12factor'
+  gem 'rails_12factor'
 end
